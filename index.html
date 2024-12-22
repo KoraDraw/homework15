@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="todo">
+    <h1 class="todo-title">ToDo List</h1>
+    <div class="todo-main">
+    <div class="todo-input">
+        <input class="todo-text" type="text" value="Введите задачу">
+        <span class="todo-add"></span>    
+    </div>
+    <button id="button-task" class="todo-add" type="submit" onclick="buttonAdd()" onmouseover="colorMe()" onmouseout="colorMeBack()" >Добавить</button>
+    </div>
+    <ul class="todo-tasks">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
