@@ -1,3 +1,6 @@
+const addTaskBtn = document.getElementById("addTaskBtn");
+addTaskBtn.addEventListener("click", createTask);
+
 function buttonAdd(){
     const toDoAdd = document.querySelector('.todo-add');
     toDoAdd.onclick();  
@@ -17,7 +20,7 @@ function createTask(){
     
 }
 function checkTask(){
-    toDoAdd.addEventListener('click', buttonAdd);
+    toDoAdd.addEventListener('click', createTask);
     toDoTasks.classList.toggle('Стереть');
     
 }
