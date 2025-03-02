@@ -1,10 +1,7 @@
 const addTaskBtn = document.getElementById("addTaskBtn");
 addTaskBtn.addEventListener("click", createTask);
 
-function buttonAdd(){
-    const toDoAdd = document.querySelector('.todo-add');
-    toDoAdd.onclick();  
-}
+
 function colorMe(){
     const toDoAdd = document.getElementById('button-task').style.backgroundColor = 'grey';
 }
@@ -18,6 +15,9 @@ function createTask(){
     const paragraph = document.querySelector('p')
     paragraph.append('Погулять собакой')
     
+}
+function addTask(){
+    createTask.onclick();  
 }
 function checkTask(){
     toDoAdd.addEventListener('click', createTask);
